@@ -5,9 +5,10 @@ import 'weather-icons/css/weather-icons.css';
 import Weather from './components/weather';
 import Form from './components/form';
 
-require('dotenv').config();
+require('dotenv').config()
 
-const API_Key = process.env.API_Key
+const API_Key = process.env.REACT_APP_API_Key;
+
 
 class App extends React.Component {
   constructor() {
@@ -15,7 +16,7 @@ class App extends React.Component {
     this.state = {
       city: undefined,
       country: undefined,
-      icon: undefined,
+      icon:undefined,
       main: undefined,
       celsius: undefined,
       description: "",
