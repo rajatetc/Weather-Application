@@ -1,4 +1,4 @@
-Weather App
+Weather App made with React using Open Weather API
 
 Live At: 
 http://weather-rg.herokuapp.com/
