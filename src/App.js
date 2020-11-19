@@ -5,11 +5,7 @@ import 'weather-icons/css/weather-icons.css';
 import Weather from './components/weather';
 import Form from './components/form';
 
-const weather = new Weather.App({
-  API_KEY: process.env.OPEN_WEATHER_API
-})
-
-// const API_Key = process.env.OPEN_WEATHER_API;
+const API_Key = process.env.OPEN_WEATHER_API;
 
 class App extends React.Component {
   constructor() {
@@ -76,7 +72,7 @@ class App extends React.Component {
 
     if (country && city) {
       const api_call = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${weather.API_Key}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_Key}`
       );
 
       const response = await api_call.json();
