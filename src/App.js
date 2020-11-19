@@ -6,7 +6,7 @@ import Weather from './components/weather';
 import Form from './components/form';
 
 const weather = new Weather.App({
-  API_KEY = process.env.OPEN_WEATHER_API;
+  API_KEY = process.env.OPEN_WEATHER_API
 })
 
 // const API_Key = process.env.OPEN_WEATHER_API;
