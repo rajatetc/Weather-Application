@@ -5,14 +5,14 @@ const Weather = props => {
   return (
     <div className="container">
       <div className="Card">
-        <h1 className="text-white py-3">{props.cityname}</h1>
+        <h1 className="py-3">{props.cityname}</h1>
         <h5 className="py-4">
           <i className={`wi ${props.weatherIcon} display-1`} />
         </h5>
 
         {/* Get Celsius */}
         {props.temp_celsius ? (
-          <h1 className="py-2">{props.temp_celsius}&deg;</h1>
+          <h1 className="py-2">{props.temp_celsius}&deg;C</h1>
         ) : null}
 
         {/* Weather description */}
